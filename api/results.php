@@ -18,5 +18,5 @@ echo $url.'/master_5.m3u8';
 echo '#EXT-X-STREAM-INF:BANDWIDTH=3898400,AVERAGE-BANDWIDTH=3370400,RESOLUTION=1920x1080,FRAME-RATE=25.000,CODECS="avc1.640028,mp4a.40.2"';
 echo $url.'/master_6.m3u8';
 
-echo $text;
+
 ?>
