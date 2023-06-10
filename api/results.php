@@ -1,12 +1,9 @@
 <?php
-
+// header("Content-Type: application/vnd.apple.mpegurl");
 $url = $_GET['url'];
-header("Content-Type: application/vnd.apple.mpegurl");
-header("User-Agent: Hotstar;in.startv.hotstar/12.2.8");
-header("Cookie: hdntl=exp=1686474680~acl=%2f*~id=c99cd321cee3ccdb6a001bb7f7af113d~data=hdntl~hmac=4241bfbfbbdf0ecab718b96067b5dcaebc40b0406520f7222751d20123dbb4e1");
 
 echo '#EXTM3U'. PHP_EOL;
-echo '#EXT-X-INDEPENDENT-SEGMENTS'. "<br>";
+echo '#EXT-X-INDEPENDENT-SEGMENTS'.PHP_EOL;
 echo '#EXT-X-VERSION:3'.PHP_EOL;
 echo '#EXT-X-STREAM-INF:BANDWIDTH=198000,AVERAGE-BANDWIDTH=180400,RESOLUTION=320x180,FRAME-RATE=25,CODECS="avc1.42c00d,mp4a.40.2"'.PHP_EOL;
 printf("%s/master_1.m3u8".PHP_EOL, $_GET['url']);
