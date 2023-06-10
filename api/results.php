@@ -1,6 +1,8 @@
 <?php
-header("Content-Type: application/vnd.apple.mpegurl");
+
 $url = $_GET['url'];
+header("Content-Type: application/vnd.apple.mpegurl");
+header("User-Agent: Hotstar;in.startv.hotstar/12.2.8");
 
 echo '#EXTM3U'. PHP_EOL;
 echo '#EXT-X-INDEPENDENT-SEGMENTS'. "<br>";
