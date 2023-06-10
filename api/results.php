@@ -1,5 +1,5 @@
 <?php
-// header("Content-Type: application/vnd.apple.mpegurl");
+header("Content-Type: application/vnd.apple.mpegurl");
 $url = $_GET['url'];
 
 echo '#EXTM3U'. PHP_EOL;
